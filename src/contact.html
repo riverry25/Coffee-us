@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./input.css" />
+
+     <script src="https://unpkg.com/feather-icons"></script> 
+  </head>
+  <body class="font-yana">
+    <section
+      class="flex justify-between shadow-xl bg-black/50 shadow-black/50 pt-5 pb-2 pl-2 fixed z-9999 top-0 left-0 right-0 text-[1.5rem]"
+    >
+      <div class="ml-10 font-bold text-white italic">Coffe US</div>
+      <img
+        src="/img/bbb.png"
+        height="20px"
+        width="20px"
+        class="absolute left-38"
+        alt=""
+      />
+
+      <ul class="m-auto text-[1rem] font-silk space-x-3 text-white mr-75">
+        <a href="/src/index.html">Home</a>
+        <a href="/src/menu.html">Menu</a>
+        <a href="/src/contact.html">Contact</a>
+        <a href="/src/about us.html">About Us</a>
+      </ul>
+      <input
+        class="text-[1rem] placeholder:text-white focus:ring-slate-500 pl-1 focus:outline-none focus:ring-1 mr-1 font-silk focus:rounded-sm text-white"
+        type="search"
+        name="query"
+        placeholder="Cari..."
+      />
+      <button type="submit"></button>
+    </section>
+    <!--section contact-->
+    <section class="min-h-[120vh] pt-30">
+      <div class="block mb-10">
+        <p class="text-center">Contact Us</p>
+        <p class="text-center text-[2.5rem] font-silk">Hubungi Kami</p>
+        <p class="text-center pt-5">
+          Jika ada pertanyaan atau komentar? cukup tulis disini
+        </p>
+      </div>
+
+      <!--alamat-->
+      <div class="text-[0.9rem] flex justify-center ml-10 space-x-10">
+        <div class="w-150 rounded-xl h-140 bg-amber-500 text-white block">
+          <p class="text-[2rem] px-10 py-5">Informasi Kontak</p>
+          <p class=" px-10">
+            Jika Anda mempunyai pertanyaan atau kekhawatiran, Anda dapat
+            menghubungi kami dengan mengisi formulir kontak, menelepon kami,
+            datang ke kantor kami, menemukan kami di jejaring sosial lain, atau
+            Anda dapat mengirim email pribadi kepada kami di:
+          </p>
+          <div class="mx-10 mt-5">
+            <div class="flex space-x-5">
+                <a href="#" id="phone"><i data-feather="phone-call" class="t"></i></a>
+                <p class="text-white">0877-8644-7909</p>
+            </div>
+             <div class="flex space-x-5 mt-10">
+                 <a href="#" id="mail "><i data-feather="mail" class=""></i></a>
+                 <p>Coffeeus@gmail.com</p>
+             </div>
+            <div class="flex space-x-5 mt-10">
+                 <a href="#" id="map "><i data-feather="map-pin" class=""></i></a>
+                 <p>Pipitan, Walantaka, Serang City, Banten 42183, Indonesia</p>
+            </div>
+          </div> 
+        </div>
+         <div class="block space-y-5 mr-50">
+            <div>
+                <p>Name</p>
+                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
+            </div>
+            <div>
+                <p>Email</p>
+                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
+            </div>
+            <div>
+                <p>Phone Number</p>
+                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
+            </div>
+            <div>
+                <p>Massage</p>
+                <div class="border-2 border-black/30 rounded-md w-100 h-50"></div>
+            </div>
+            <div class="border-2 border-black/30 rounded-full w-100 h-12 text-center pt-3">
+                <a href="">SEND</a>
+            </div>
+         </div>
+        </div>
+    </section>
+    <!--section contact end-->
+
+      <!--section about us-->
+      <section class="min-h-[40vh] ">
+          <div class="block text-center text-black/60 py-10">
+            <p class="text-[2.5rem] font-silk">MEDIA SOSIAL</p>
+            <p class="">Untuk berkomunikasi lebih jauh lagi anda bisa mencari media sosial kami</p>
+          </div>
+
+          <div class="flex justify-center pt-10 space-x-50">
+             <div class="block">   
+               <img src="/img/facebook.png" alt="" class="w-10 h-10 m-auto ">
+               <p class="text-[1.2rem] text-center">Facebook</p>
+               <p>Coffe Us Indonesia</p>
+            </div>
+            <div clas>
+                 <img src="/img/instagram.png" alt="" class="w-10 h-10 m-auto">
+                  <p class=" text-[1.2rem] text-center">Instagram</p>
+                  <p class="text-center">@COffeUsIDN</p>
+            </div>
+            <div>
+                <img src="/img/mail.png" alt="" class="w-10 h-10 m-auto">
+                <p class="text-[1.2rem] text-center">Email</p>
+                <p>CoffeUsIdn@gmail.com</p>
+            </div>
+           <div>
+               <img src="/img/whatsapp (2).png" alt="" class="w-10 h-10 m-auto">
+                 <p class="text-[1.2rem] text-center">Whatsapp</p>
+                 <p class="text-center">087786447909</p>
+           </div> 
+          </div>
+      </section>
+     <!--section about us end-->
+     
+     <!--section last-->
+    <section class="min-h-[10vh] bg-black text-white font-silk text-center">
+      <p class="pt-10">|Created By : Ferdi Ahyana YUsri</p>
+    </section>
+    <!--section last end-->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
