@@ -285,9 +285,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -351,9 +348,6 @@
   .min-h-\[50vh\] {
     min-height: 50vh;
   }
-  .min-h-\[70vh\] {
-    min-height: 70vh;
-  }
   .min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -413,12 +407,6 @@
   }
   .w-\[148px\] {
     width: 148px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .list-disc {
     list-style-type: disc;
@@ -496,10 +484,6 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -507,9 +491,6 @@
   .border-b-3 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 3px;
-  }
-  .border-black {
-    border-color: var(--color-black);
   }
   .border-black\/30 {
     border-color: color-mix(in srgb, #000 30%, transparent);
@@ -525,9 +506,6 @@
   }
   .bg-amber-500 {
     background-color: var(--color-amber-500);
-  }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
   }
   .bg-amber-600\/10 {
     background-color: color-mix(in srgb, oklch(66.6% 0.179 58.318) 10%, transparent);
@@ -643,6 +621,9 @@
   .font-yana {
     font-family: var(--font-yana);
   }
+  .text-\[0\.4rem\] {
+    font-size: 0.4rem;
+  }
   .text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
@@ -736,9 +717,6 @@
       color: color-mix(in oklab, var(--color-black) 70%, transparent);
     }
   }
-  .text-gray-600 {
-    color: var(--color-gray-600);
-  }
   .text-gray-600\/60 {
     color: color-mix(in srgb, oklch(44.6% 0.03 256.802) 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -753,9 +731,6 @@
   }
   .italic {
     font-style: italic;
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .opacity-90 {
     opacity: 90%;
@@ -775,10 +750,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-black) 50%, transparent) var(--tw-shadow-alpha), transparent);
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .placeholder\:text-white {
     &::placeholder {
@@ -882,11 +853,6 @@
       min-height: 30vh;
     }
   }
-  .max-\[758px\]\:min-h-\[50vh\] {
-    @media (width < 758px) {
-      min-height: 50vh;
-    }
-  }
   .max-\[758px\]\:w-5 {
     @media (width < 758px) {
       width: calc(var(--spacing) * 5);
@@ -946,19 +912,9 @@
       padding-block: calc(var(--spacing) * 2);
     }
   }
-  .max-\[758px\]\:pt-3 {
-    @media (width < 758px) {
-      padding-top: calc(var(--spacing) * 3);
-    }
-  }
   .max-\[758px\]\:pt-5 {
     @media (width < 758px) {
       padding-top: calc(var(--spacing) * 5);
-    }
-  }
-  .max-\[758px\]\:pt-7 {
-    @media (width < 758px) {
-      padding-top: calc(var(--spacing) * 7);
     }
   }
   .max-\[758px\]\:pt-15 {
@@ -1133,11 +1089,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1160,7 +1111,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }
