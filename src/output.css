@@ -753,6 +753,12 @@
   .bg-\[url\(\'\/img\/bg-biji\.jpg\'\)\] {
     background-image: url('/img/bg-biji.jpg');
   }
+  .bg-\[url\(\'\/src\/img\/bg-biji\.jpg\'\)\] {
+    background-image: url('/src/img/bg-biji.jpg');
+  }
+  .bg-\[url\(\'\/srcimg\/bg-biji\.jpg\'\)\] {
+    background-image: url('/srcimg/bg-biji.jpg');
+  }
   .bg-cover {
     background-size: cover;
   }
