@@ -970,11 +970,6 @@
       font-size: 0.8rem;
     }
   }
-  .max-\[758px\]\:text-\[0\.9rem\] {
-    @media (width < 758px) {
-      font-size: 0.9rem;
-    }
-  }
   .max-\[758px\]\:text-\[1\.2rem\] {
     @media (width < 758px) {
       font-size: 1.2rem;
