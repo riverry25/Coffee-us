@@ -11,119 +11,154 @@
      <script src="https://unpkg.com/feather-icons"></script> 
   </head>
   <body class="font-yana">
-    <section
-      class="flex justify-between shadow-xl bg-black/50 shadow-black/50 pt-5 pb-2 pl-2 fixed z-9999 top-0 left-0 right-0 text-[1.5rem]"
-    >
-      <div class="ml-10 font-bold text-white italic">Coffe US</div>
-      <img
-        src="./img/bbb.png"
-        height="20px"
-        width="20px"
-        class="absolute left-38"
-        alt=""
-      />
+      <section class="flex justify-between shadow-xl bg-black/30 shadow-black/50 pt-5  pl-2 fixed z-9999 top-0 left-0 right-0 text-[1.5rem]">
+        <div class="lg:ml-10 ml-2 font-bold text-white italic flex  w-70 h-10 lg:w-0 lg:h-0">
+            <a href="" class="">Coffe Us</a>
+            <img src="./img/bbb.png" class="w-5 h-5" alt="">
+        </div>
+        
+      
+        <div id="navbar" class="m-auto text-[1rem] font-silk space-x-3 opacity-0
+        text-white max-[758px]:absolute max-[758px]:h-[100vh]
+        max-[758px]:top-[100%] max-[758px]:bg-amber-600 
+        right-0  max-[758px]:transition-opacity max-[758px]:left-50 rounded-md
+        max-[758px]:ease-in-out lg:opacity-100 md:inline-block lg:flex">
 
-      <ul class="m-auto text-[1rem] font-silk space-x-3 text-white mr-75">
-        <a href="./index.html">Home</a>
-        <a href="./menu.html">Menu</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./about us.html">About Us</a>
-      </ul>
-      <input
-        class="text-[1rem] placeholder:text-white focus:ring-slate-500 pl-1 focus:outline-none focus:ring-1 mr-1 font-silk focus:rounded-sm text-white"
-        type="search"
-        name="query"
-        placeholder="Cari..."
-      />
+        <a href="./index.html" class="max-[758px]:block max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Home</a>
+        <a href="./menu.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Menu</a>
+        <a href="./contact.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Contact</a>
+        <a href="./about us.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">About Us</a> 
+        
+      </div>
+
+      <input class="text-[1rem] max-[758px]:hidden placeholder:text-white focus:ring-slate-500 pl-1 focus:outline-none focus:ring-1 mr-1 font-silk focus:rounded-sm text-white" type="search" name="query" placeholder="Cari...">
       <button type="submit"></button>
+
+
+      
+      <!--hamburger menu-->
+      <div class="pl-10 mr-10 text-white">
+        <input id="toggle" type="checkbox" hidden>
+        <label for="toggle">
+            <a class="md:hidden" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </label>
+      </div>   
+      <!--hamburger menu end-->
+     
     </section>
     <!--section contact-->
     <section class="min-h-[120vh] pt-30">
       <div class="block mb-10">
         <p class="text-center">Contact Us</p>
         <p class="text-center text-[2.5rem] font-silk">Hubungi Kami</p>
-        <p class="text-center pt-5">
+        <p class="text-center pt-5 text-[0.9rem]">
           Jika ada pertanyaan atau komentar? cukup tulis disini
         </p>
       </div>
 
       <!--alamat-->
-      <div class="text-[0.9rem] flex justify-center ml-10 space-x-10">
-        <div class="w-150 rounded-xl h-140 bg-amber-500 text-white block">
-          <p class="text-[2rem] px-10 py-5">Informasi Kontak</p>
-          <p class=" px-10">
+     <div class="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-y-10 lg:gap-x-10 px-4 text-[0.9rem]">
+
+    <div class="w-full max-w-md rounded-xl h-auto bg-amber-500 text-white block p-6 sm:p-10">
+        <p class="text-2xl sm:text-3xl font-bold mb-4">Informasi Kontak</p>
+        <p class="mb-6 leading-relaxed text-justify">
             Jika Anda mempunyai pertanyaan atau kekhawatiran, Anda dapat
             menghubungi kami dengan mengisi formulir kontak, menelepon kami,
             datang ke kantor kami, menemukan kami di jejaring sosial lain, atau
             Anda dapat mengirim email pribadi kepada kami di:
-          </p>
-          <div class="mx-10 mt-5">
-            <div class="flex space-x-5">
-                <a href="#" id="phone"><i data-feather="phone-call" class="t"></i></a>
+        </p>
+        <div class="mt-5 space-y-6">
+            <div class="flex items-center space-x-5">
+                <a href="tel:+6287786447909" id="phone" class="flex-shrink-0"><i data-feather="phone-call" class="w-6 h-6"></i></a>
                 <p class="text-white">0877-8644-7909</p>
             </div>
-             <div class="flex space-x-5 mt-10">
-                 <a href="#" id="mail "><i data-feather="mail" class=""></i></a>
-                 <p>Coffeeus@gmail.com</p>
-             </div>
-            <div class="flex space-x-5 mt-10">
-                 <a href="#" id="map "><i data-feather="map-pin" class=""></i></a>
-                 <p>Pipitan, Walantaka, Serang City, Banten 42183, Indonesia</p>
+            <div class="flex items-center space-x-5">
+                <a href="mailto:Coffeeus@gmail.com" id="mail" class="flex-shrink-0"><i data-feather="mail" class="w-6 h-6"></i></a>
+                <p>Coffeeus@gmail.com</p>
             </div>
-          </div> 
+            <div class="flex items-start space-x-5">
+                <a href="https://maps.app.goo.gl/YOUR_MAP_LINK_HERE" target="_blank" rel="noopener noreferrer" id="map" class="flex-shrink-0"><i data-feather="map-pin" class="w-6 h-6"></i></a>
+                <p>Pipitan, Walantaka, Serang City, Banten 42183, Indonesia</p>
+            </div>
         </div>
-         <div class="block space-y-5 mr-50">
-            <div>
-                <p>Name</p>
-                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
-            </div>
-            <div>
-                <p>Email</p>
-                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
-            </div>
-            <div>
-                <p>Phone Number</p>
-                <div class="border-2 border-black/30 rounded-md w-100 h-10"></div>
-            </div>
-            <div>
-                <p>Massage</p>
-                <div class="border-2 border-black/30 rounded-md w-100 h-50"></div>
-            </div>
-            <div class="border-2 border-black/30 rounded-full w-100 h-12 text-center pt-3">
-                <a href="">SEND</a>
-            </div>
-         </div>
+    </div>
+
+    <form class="block w-full max-w-md space-y-3" >
+        <div>
+            <label for="name" class="block text-black mb-1">Name</label>
+            <input type="text" id="name" name="name"
+                   class="border-2 border-black/30 rounded-md w-full h-10 px-3 py-2
+                          focus:outline-none focus:border-blue-500"
+                   placeholder="Your Name">
+        </div>
+
+        <div>
+            <label for="email" class="block text-black mb-1">Email</label>
+            <input type="email" id="email" name="email"
+                   class="border-2 border-black/30 rounded-md w-full h-10 px-3 py-2
+                          focus:outline-none focus:border-blue-500 invalid:text-red-500 peer"
+                   placeholder="you@example.com">
+                  <p class="invisible peer-invalid:visible text-red-500">Email anda tidak valid masukkan email yang benar</p>
+
+        </div>
+
+        <div>
+            <label for="phone" class="block text-black mb-1">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   class="border-2 border-black/30 rounded-md w-full h-10 px-3 py-2
+                          focus:outline-none focus:border-blue-500"
+                   placeholder="+62 812 3456 7890">
+        </div>
+
+        <div>
+            <label for="message" class="block text-black mb-1">Message</label>
+            <textarea id="message" name="message" rows="5"
+                      class="border-2 border-black/30 rounded-md w-full h-auto px-3 py-2 resize-y
+                             focus:outline-none focus:border-blue-500"
+                      placeholder="Your message here..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit" id="submit"
+                    class="border-2 border-black/30 rounded-full w-full h-12 flex items-center justify-center
+                           bg-amber-600 text-white font-semibold hover:bg-amber-700
+                           transition duration-300 ease-in-out">
+                SEND
+            </button>
+        </div>
+    </form>
+</div>
         </div>
     </section>
     <!--section contact end-->
 
       <!--section about us-->
-      <section class="min-h-[40vh] ">
-          <div class="block text-center text-black/60 py-10">
+      <section class="min-h-[50vh] pt-20 pb-5">
+          <div class="block text-center text-black/60">
             <p class="text-[2.5rem] font-silk">MEDIA SOSIAL</p>
             <p class="">Untuk berkomunikasi lebih jauh lagi anda bisa mencari media sosial kami</p>
           </div>
 
-          <div class="flex justify-center pt-10 space-x-50">
-             <div class="block">   
-               <img src=".img/facebook.png" alt="" class="w-10 h-10 m-auto ">
-               <p class="text-[1.2rem] text-center">Facebook</p>
-               <p>Coffe Us Indonesia</p>
+          <div class="flex justify-center pt-10 space-x-50 lg:flex-row flex-col">
+            <div class="block mx-auto lg:mx-0 lg:px-10 pb-5 pt-5 lg:pt-0 border-b-2 w-full border-amber-300 lg:border-0 ">
+              <img src="./img/facebook.png" alt="" class="w-10 h-10 m-auto">
+               <p class="text-[1.2rem] pt-2 text-center">Facebook</p>
+               <p class="text-center pt-2 ">Coffe Us Indonesia</p>
             </div>
-            <div clas>
+            <div class="mx-auto lg:mx-0 lg:px-10 pb-5 pt-5 lg:pt-0 border-b-2 w-full border-amber-300 lg:border-0">
                  <img src="./img/instagram.png" alt="" class="w-10 h-10 m-auto">
-                  <p class=" text-[1.2rem] text-center">Instagram</p>
-                  <p class="text-center">@COffeUsIDN</p>
+                  <p class=" text-[1.2rem] pt-2 text-center">Instagram</p>
+                  <p class="text-center pt-2">@COffeUsIDN</p>
             </div>
-            <div>
+            <div class="mx-auto lg:mx-0 lg:px-10 pb-5 pt-5 lg:pt-0 border-b-2 w-full border-amber-300 lg:border-0">
                 <img src="./img/mail.png" alt="" class="w-10 h-10 m-auto">
-                <p class="text-[1.2rem] text-center">Email</p>
-                <p>CoffeUsIdn@gmail.com</p>
+                <p class="text-[1.2rem] pt-2 text-center">Email</p>
+                <p class="text-center pt-2">CoffeUsIdn@gmail.com</p>
             </div>
-           <div>
-               <img src="./img/img/whatsapp (2).png" alt="" class="w-10 h-10 m-auto">
-                 <p class="text-[1.2rem] text-center">Whatsapp</p>
-                 <p class="text-center">087786447909</p>
+           <div class="mx-auto lg:mx-0 lg:px-10 pb-5 pt-5 lg:pt-0 w-full">
+               <img src="./img/whatsapp (2).png" alt="" class="w-10 h-10 m-auto">
+                 <p class="text-[1.2rem] pt-2 text-center">Whatsapp</p>
+                 <p class="text-center pt-2">087786447909</p>
            </div> 
           </div>
       </section>
@@ -137,5 +172,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

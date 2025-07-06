@@ -11,107 +11,117 @@
     <script src="https://unpkg.com/feather-icons"></script> 
   </head>
   <body class="font-yana">
-    <section
-      class="flex justify-between shadow-xl bg-black/30 pt-5 pb-2 pl-2 fixed z-9999 top-0 left-0 right-0 text-[1.5rem]"
-    >
-      <div class="ml-10 font-bold text-white italic">Coffe US</div>
-      <img
-        src="./img/bbb.png"
-        height="20px"
-        width="20px"
-        class="absolute left-38"
-        alt=""
-      />
-
-      <ul class="m-auto text-[1rem] font-silk space-x-3 text-white mr-75">
+      <section class="flex justify-between shadow-xl bg-black/30 shadow-black/50 pt-5  pl-2 fixed z-9999 top-0 left-0 right-0 text-[1.5rem]">
+        <div class="lg:ml-10 ml-2 font-bold text-white italic flex  w-70 h-10 lg:w-0 lg:h-0">
+            <a href="" class="">Coffe Us</a>
+            <img src="./img/bbb.png" class="w-5 h-5" alt="">
+        </div>
         
-        <a href="./index.html">Home</a>
-        <a href="./menu.html">Menu</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./about us.html">About Us</a>
-      </ul>
-      <input
-        class="text-[1rem] placeholder:text-white focus:ring-slate-500 pl-1 focus:outline-none focus:ring-1 font-silk focus:rounded-sm text-white"
-        type="search"
-        name="query"
-        placeholder="Cari..."
-      />
+      
+        <div id="navbar" class="m-auto text-[1rem] font-silk space-x-3 opacity-0
+        text-white max-[758px]:absolute max-[758px]:h-[100vh]
+        max-[758px]:top-[100%] max-[758px]:bg-amber-600 
+        right-0  max-[758px]:transition-opacity max-[758px]:left-50 rounded-md
+        max-[758px]:ease-in-out lg:opacity-100 md:inline-block lg:flex">
+
+        <a href="./index.html" class="max-[758px]:block max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Home</a>
+        <a href="./menu.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Menu</a>
+        <a href="./contact.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">Contact</a>
+        <a href="./about us.html" class="max-[758px]:block  max-[758px]:py-5 max-[758px]:px-4 max-[758px]:text-white  max-[758px]:active:bg-white max-[758px]:rounded">About Us</a> 
+        
+      </div>
+
+      <input class="text-[1rem] max-[758px]:hidden placeholder:text-white focus:ring-slate-500 pl-1 focus:outline-none focus:ring-1 mr-1 font-silk focus:rounded-sm text-white" type="search" name="query" placeholder="Cari...">
       <button type="submit"></button>
+
+
+      
+      <!--hamburger menu-->
+      <div class="pl-10 mr-10 text-white">
+        <input id="toggle" type="checkbox" hidden>
+        <label for="toggle">
+            <a class="md:hidden" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </label>
+      </div>   
+      <!--hamburger menu end-->
+     
     </section>
 
     <!--about us-->
-    <section class="pt-25 bg- min-h-[280vh]">
-      <div class="flex">
-        <img src="./img/aboutus.jpg" class="w-200 h-[88vh] opacity-90" alt="" />
-        <div class="absolute ml-70 h-170 w-130"></div>
-        <div class="w-200 h-165 p-30 text-black">
-          <p class="text-[1.5rem]">— About us</p>
-          <p class="text-[5rem] font-semibold text-amber-700">Cerita Kami</p>
-          <p class="text-[1.7rem]">
-            Yuk, kenalan dulu dengan kami-mulai dari toko kami, suasana di
-            sekitar, hingga perjalanan kami!
-          </p>
-        </div>
-      </div>
-      <div class="flex space-x-10">
-        <div class="w-190 h-100  mt-10 pl-10">
-            <p class="text-justify font-semibold text-[2rem] text-amber-800">
-                  Origin of the Name "Caffee Us"
-            </p>
-          <p class=" text-[1.1rem] text-justify text-black/70">
-            Nama "Caffee Us" lahir dari filosofi kebersamaan dan kehangatan yang
-            ingin dihadirkan dalam setiap cangkir kopi. Kata "Us" dalam bahasa
-            Inggris berarti "kita", yang mencerminkan visi kafe ini sebagai
-            tempat di mana siapa pun bisa merasa diterima, berbagi cerita, dan
-            membangun koneksi. Nama ini dipilih karena kami percaya bahwa kopi
-            bukan sekadar minuman, melainkan jembatan yang menghubungkan banyak
-            orang dari berbagai latar belakang.
-          </p>
-        </div>
-        <div class="w-190 h-100 mt-10 ">
-            <img src="./img/abous us.jpg" class="w-200 h-100">
-        </div>
-      </div>
-      <div class="flex space-x-10 mt-10">
-        <div class="w-190 h-100 ">
-            <img src="./img/about us 1.jpg" class="w-200 h-100">
-        </div>
-        <div class="w-200 h-100 mt-10">
-        <p class=" text-right font-semibold text-[2rem] text-amber-800">
-            Beginnings and Inspiration
-        </p>
-          <p class="text-[1.1rem] text-justify text-black/70">
-            Caffee Us bermula dari kecintaan kami terhadap kopi dan keinginan
-            untuk menghadirkan pengalaman berbeda bagi para pencinta kopi.
-            Terinspirasi dari pengalaman mengelola beberapa kafe seperti Coffee
-            Toffee IDN dan USCOFFEE, kami belajar pentingnya inovasi menu,
-            pelayanan pelanggan yang hangat, serta membangun merek yang dekat di
-            hati pengunjung. Kami juga suka bereksperimen dengan hidangan dan
-            minuman fusi, seperti pancake burger dan teh cokelat, yang menjadi
-            ciri khas Caffee Us
-          </p>
-        </div>
-      </div>
-      <div class="flex space-x-40">
-        <div class="w-180 h-100 ml-10">
-        <p class="pt-25 text-left font-semibold text-[2rem] text-amber-800">
-            Mission and Hopes for the Future
-          </p>
-          <p class=" text-[1.1rem] text-justify text-black/70">
-            Caffee Us berkomitmen untuk terus menjadi ruang yang ramah,
-            inovatif, dan inspiratif. Kami ingin terus menghadirkan pengalaman
-            baru, memperluas jaringan komunitas, dan menjaga kualitas dalam
-            setiap sajian. Dengan semangat "kita", Caffee Us berharap dapat
-            tumbuh bersama pelanggan dan menjadi bagian dari cerita indah
-            mereka.
-          </p>
-        </div>
-        <div class="w-190 h-100 mt-10 ">
-            <img src="./img/abous us 2.jpg" class="w-150 h-90">
-        </div>
-        </div>
-      </div>
-    </section>
+   <section class="pt-25 bg- min-h-[280vh]">
+  <div class="lg:flex lg:space-x-10"> 
+    <img src="./img/aboutus.jpg" class="w-full h-[88vh] object-cover opacity-90 lg:w-1/2 lg:h-auto" alt="About Us Header Image" />
+
+    <div class="p-5 text-black lg:p-30 lg:w-1/2">
+      <p class="text-sm sm:text-base lg:text-[1.5rem]">— About us</p> 
+      <p class="text-4xl font-semibold text-amber-700 sm:text-5xl lg:text-[5rem]">Cerita Kami</p> 
+      <p class="text-[0.8rem] sm:text-[1rem] lg:text-[1.7rem]">
+        Yuk, kenalan dulu dengan kami-mulai dari toko kami, suasana di
+        sekitar, hingga perjalanan kami!
+      </p>
+    </div>
+  </div>
+
+  <div class="lg:flex lg:space-x-10 mt-10 px-5 sm:block"> 
+    <div class="w-full mt-5 lg:w-1/2 lg:pl-10">
+      <p class="font-semibold text-amber-800 text-2xl sm:text-2xl lg:text-[2rem] pb-10">
+        Origin of the Name <span class="block sm:inline">"Caffee Us"</span> 
+      </p>
+      <p class="text-[0.8rem] text-justify text-black/70 sm:text-base lg:text-[1.1rem]">
+        Nama "Caffee Us" lahir dari filosofi kebersamaan dan kehangatan yang
+        ingin dihadirkan dalam setiap cangkir kopi. Kata "Us" dalam bahasa
+        Inggris berarti "kita", yang mencerminkan visi kafe ini sebagai
+        tempat di mana siapa pun bisa merasa diterima, berbagi cerita, dan
+        membangun koneksi. Nama ini dipilih karena kami percaya bahwa kopi
+        bukan sekadar minuman, melainkan jembatan yang menghubungkan banyak
+        orang dari berbagai latar belakang.
+      </p>
+    </div>
+    <div class="w-full mt-5 lg:w-1/2">
+      <img src="./img/abous us.jpg" class="w-full h-auto object-cover" alt="Origin Image" />
+    </div>
+  </div>
+
+  <div class="lg:flex lg:space-x-10 mt-10 px-5 sm:block">
+    <div class="w-full mt-5 lg:w-1/2">
+      <img src="./img/about us 1.jpg" class="w-full h-auto object-cover" alt="Beginnings Image" />
+    </div>
+    <div class="w-full mt-5 lg:w-1/2">
+      <p class="font-semibold text-amber-800 text-2xl sm:text-2xl lg:text-[2rem] sm:pt-10 sm:pb-10">
+        Beginning and Inpiration<span class="block sm:inline">"Caffee Us"</span> 
+      </p>
+      <p class="text-[0.8rem] text-justify text-black/70 sm:text-base lg:text-[1.1rem]">
+        Caffee Us bermula dari kecintaan kami terhadap kopi dan keinginan
+        untuk menghadirkan pengalaman berbeda bagi para pencinta kopi.
+        Terinspirasi dari pengalaman mengelola beberapa kafe seperti Coffee
+        Toffee IDN dan USCOFFEE, kami belajar pentingnya inovasi menu,
+        pelayanan pelanggan yang hangat, serta membangun merek yang dekat di
+        hati pengunjung. Kami juga suka bereksperimen dengan hidangan dan
+        minuman fusi, seperti pancake burger dan teh cokelat, yang menjadi
+        ciri khas Caffee Us
+      </p>
+    </div>
+  </div>
+
+  <div class="lg:flex lg:space-x-10 mt-10 px-5 sm:block mb-10"> 
+    <div class="w-full mt-5 lg:w-1/2 lg:ml-10">
+      <p class="font-semibold text-amber-800 text-2xl sm:text-2xl lg:text-[2rem] pb-10">
+        Mission and Hopes <span class="block sm:inline">"Caffee Us"</span> 
+      </p>
+      <p class="text-[0.8rem] text-justify text-black/70 sm:text-base lg:text-[1.1rem]">
+        Caffee Us berkomitmen untuk terus menjadi ruang yang ramah,
+        inovatif, dan inspiratif. Kami ingin terus menghadirkan pengalaman
+        baru, memperluas jaringan komunitas, dan menjaga kualitas dalam
+        setiap sajian. Dengan semangat "kita", Caffee Us berharap dapat
+        tumbuh bersama pelanggan dan menjadi bagian dari cerita indah
+        mereka.
+      </p>
+    </div>
+    <div class="w-full mt-5 lg:w-1/2">
+      <img src="./img/abous us 2.jpg" class="w-full h-auto object-cover" alt="Mission Image" />
+    </div>
+  </div>
+</section>
 
     <!--section last-->
     <section class="min-h-[10vh] bg-black text-white font-silk text-center">
@@ -122,5 +132,6 @@
      <script>
       feather.replace();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
